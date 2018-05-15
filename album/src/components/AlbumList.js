@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const header = (props) => {
+const AlbumList = (props) => {
   const { textStyle, viewStyle } = styles;
 
   return (
       <View style="viewStyle">
-        <Text style="textStyle">{ props.headerText }</Text>
+        <Text >Album List !!! </Text>
       </View>
   );
 }
@@ -29,4 +29,4 @@ const styles = {
   }
 };
 
-export default header;
+export default AlbumList;
