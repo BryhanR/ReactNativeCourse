@@ -5,11 +5,11 @@ const header = (props) => {
   const { textStyle, viewStyle } = styles;
 
   return (
-      <View style="viewStyle">
-        <Text style="textStyle">{ props.headerText }</Text>
+      <View style={viewStyle}>
+        <Text style={textStyle}>{ props.headerText }</Text>
       </View>
   );
-}
+};
 
 const styles = {
   viewStyle: {
