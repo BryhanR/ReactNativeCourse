@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 import {Header} from './components/common';
+import { LoginForm } from './components';
 
 import firebase from 'firebase';
 
 
 class App extends Component{
     componentWillUnmount () {
-        
+
         firebase.initializeApp({
             apiKey: "AIzaSyA-iBgzPi9xiMHUA_xGTmbSqgOqRGILISg",
             authDomain: "authentication-udemy-a833d.firebaseapp.com",
@@ -17,16 +18,14 @@ class App extends Component{
             storageBucket: "",
             messagingSenderId: "176988025151"
           });
-        
+
     }
 
     render () {
         return (
             <View>
                 <Header headerText="Authentiation" />
-                <Text>
-                    An app
-                </Text>
+                <LoginForm/>
             </View>
         );
     }
